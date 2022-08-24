@@ -1,0 +1,2 @@
+[flake8]
+exclude = */migrations/*,node_modules,*/settings/*,base.py,dev.py,urls.py,wsgi.py,production.py
