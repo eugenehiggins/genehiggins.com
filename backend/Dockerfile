@@ -11,10 +11,10 @@ ENV PYTHONUNBUFFERED=1 \
 
 COPY ./genehigginswebsite/requirements.txt /tmp/requirements.txt
 COPY ./genehigginswebsite/requirements.dev.txt /tmp/requirements.dev.txt
-COPY ./genehigginswebsite /genehigginswebsite
+COPY ./genehigginswebsite /app/backend/genehigginswebsite
 
 # Use /app folder as a directory where the source code is stored.
-WORKDIR /genehigginswebsite
+WORKDIR /app/backend/genehigginswebsite
 
 # Port used by this container to serve HTTP.
 EXPOSE 8000
